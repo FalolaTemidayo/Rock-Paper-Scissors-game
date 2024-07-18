@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROCK PAPER SCISSORS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="Images/favicon.jpeg" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- WELCOME CONTAINER -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <img src="Images/robot1.jpeg" class="welcome-robot-pic" alt="" />
+        <h2>WELCOME!</h2>
+        <input
+          type="text"
+          id="nameInput"
+          placeholder="Input your nickname here.."
+        />
+        <p>Play Rock Paper Scissors with me to earn lots of rewards</p>
+
+        <button id="startButton">Play</button>
+      </div>
+    </div>
+
+    <!-- WIN OR LOSE MODAL-->
+    <div id="final-winner" id="computer-wins">
+      <h2 id="winner"></h2>
+      <p id="winner-name"></p>
+      <button id="reset" class="newGame">New Game</button>
+    </div>
+
+    <!-- MAIN PAGE -->
+    <div class="main-content">
+      <div class="game-container">
+        <h1>ROCK - PAPER SCISSORS <span></span></h1>
+        <div class="scoreboard">
+          <div class="store-section" id="user-section">
+            <div class="container" class="pic">
+              <img src="Images/user.jpg" alt="" />
+            </div>
+            <p class="name" id="userName"><b></b></p>
+            <div id="user-score" class="score">0</div>
+          </div>
+          <div class="store-section">
+            <div class="container">
+              <img src="Images/versus2.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="store-section" id="computer-section">
+            <div class="container" class="pic">
+              <img src="Images/robot1.jpeg" alt="" />
+            </div>
+            <p class="name">Robot</p>
+            <div id="computer-score" class="score">0</div>
+          </div>
+        </div>
+        <div class="result">
+          <p id="result-message">
+            I have made my move already <br /><b>MAKE YOUR MOVE!!</b>
+          </p>
+        </div>
+        <div class="choices">
+          <div>
+            <button id="rock" class="choice">
+              <img src="Images/rock.jpeg" alt="" class="pic1" />
+            </button>
+            <p>ROCK</p>
+          </div>
+          <div>
+            <button id="paper" class="choice">
+              <img src="Images/paper1.jpeg" alt="" class="pic1" />
+            </button>
+            <p>PAPER</p>
+          </div>
+          <div>
+            <button id="scissors" class="choice">
+              <img src="Images/scissors.png" alt="" class="pic1" />
+            </button>
+            <p>SCISSORS</p>
+          </div>
+        </div>
+        <button id="resetTwo" class="reset-btn">New Game</button>
+        <div class="game-history">
+          <p><b>RULE:</b>The first to win reach 10 points wins</p>
+          <!-- <h2 id="history">Game History ⩡</h2> -->
+          <ul id="history-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- WATER MARK-->
+    <div class="watermark"><p>Copyright © 2024 Fet</p></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
